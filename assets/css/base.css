@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'ZeitungPro-Black-_1_';
+  src: url(../../ZeitungPro-Black-_1_.ttf) format('truetype');
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primärfarben */
+  --color-primary: #324032;      /* Dunkelgrün */
+  --color-secondary: #BF6E26;    /* Warmes Orange */
+
+  /* Hintergrund */
+  --color-background: #F2EDE9;   /* Helles Beige */
+
+  /* Akzentfarben */
+  --color-accent-dark: #592C12;  /* Dunkelbraun */
+  --color-accent-terra: #BF3E0F; /* Terrakotta */
+}
+
+h1 {
+    font-family: 'ZeitungPro-Black-_1_';
+}
+
+h2 {
+    color: var(--color-secondary);
+    font-family: 'ZeitungPro-Black-_1_';
+   
+}
+
+h3 {
+    font-family: 'ZeitungPro-Black-_1_';
+  
+}
+
+h4 {
+    font-family: 'ZeitungPro-Black-_1_';
+    
+}
+
+h5 {
+    font-family: 'ZeitungPro-Black-_1_';
+  
+}
+
+p {
+    font-family: 'ZeitungPro-Black-_1_';
+   
+}

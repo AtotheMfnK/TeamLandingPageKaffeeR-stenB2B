@@ -1,0 +1,137 @@
+.cardSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* Zentriert die Karten horizontal */
+  gap: 20px;
+  /* Abstand zwischen den Karten */
+  padding: 20px;
+  /* Optional: Padding um die Karten herum */
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+  display: block;
+  flex-direction: column;
+  width: min(12%, 22%);
+  height: 300px;
+  background-color: var(--color-secondary);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1%;
+}
+
+
+
+.round-card {
+  display: inline-block;
+  flex-direction: column;
+  /* Stellt die <p>-Elemente untereinander dar */
+  justify-content: center;
+  /* Zentriert den Inhalt vertikal */
+  align-items: center;
+  /* Zentriert den Inhalt horizontal */
+  width: clamp(20px, 85px, 120px);
+  height: clamp(20px, 85px, 120px);
+  background-color: black;
+  border-radius: 45px;
+  text-align: center;
+  /* Zentriert den Text innerhalb der <p>-Elemente */
+  color: white;
+  /* Optional: Textfarbe für bessere Lesbarkeit */
+  font-size: clamp(0.7rem, 1vw, 1.2rem);
+  background-color: brown;
+  margin-bottom: 2em;
+}
+
+.round-card img {
+  width: 100%;
+  border-radius: 45%;
+  margin: 0 auto;
+}
+
+.card1 h5,
+.card2 h5,
+.card3 h5,
+.card4 h5,
+.card5 h5 {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  line-height: normal;
+  color: aqua;
+}
+
+.card1 p,
+.card2 p,
+.card3 p,
+.card4 p,
+.card5 p {
+  font-size: clamp(0.6rem 0.9rem 1.2rem);
+  text-align: center;
+  /* Zentrierter Text */
+  line-height: 1.1rem;
+  color: green;
+}
+
+@media (max-width: 991px) {
+  .cardSection {
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5 {
+    flex: 1 1 calc(50% - 16px);
+    max-width: none;
+    min-height: 260px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .cardSection {
+    padding: 12px;
+    gap: 14px;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5 {
+    flex: 1 1 100%;
+    min-height: auto;
+    padding: 20px 14px;
+  }
+
+  .round-card {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 18px;
+  }
+
+  .card1 h5,
+  .card2 h5,
+  .card3 h5,
+  .card4 h5,
+  .card5 h5 {
+    font-size: 0.95rem;
+  }
+
+  .card1 p,
+  .card2 p,
+  .card3 p,
+  .card4 p,
+  .card5 p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}
