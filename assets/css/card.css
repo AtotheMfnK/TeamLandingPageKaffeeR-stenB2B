@@ -9,16 +9,21 @@
   /* Optional: Padding um die Karten herum */
 }
 
+.cardSection p {
+  font-family: ’DeineZweiteSchriftart’;
+}
+
 .card1,
 .card2,
 .card3,
 .card4,
-.card5 {
+.card5,
+.card6 {
   display: block;
   flex-direction: column;
   width: min(12%, 22%);
   height: 300px;
-  background-color: var(--color-secondary);
+  background-color: var(--color-background);
   border-radius: 10px;
   align-items: center;
   justify-content: center;
@@ -46,6 +51,7 @@
 .round-card:nth-of-type(3)::before { content: "3"; }
 .round-card:nth-of-type(4)::before { content: "4"; }
 .round-card:nth-of-type(5)::before { content: "5"; }
+.round-card:nth-of-type(6)::before { content: "6"; }
 
 /* Gemeinsame Stile für die Pseudo-Elemente */
 .round-card::before {
@@ -73,7 +79,8 @@
 .card2 h5,
 .card3 h5,
 .card4 h5,
-.card5 h5 {
+.card5 h5,
+.card6 h6 {
   font-size: 0.9rem;
   margin-bottom: 10px;
   line-height: normal;
@@ -84,8 +91,9 @@
 .card2 p,
 .card3 p,
 .card4 p,
-.card5 p {
-  font-size: clamp(0.6rem 0.9rem 1.2rem);
+.card5 p,
+.card6 p {
+  font-size: clamp(0.4rem 0.7rem 0.8rem);
   text-align: center;
   /* Zentrierter Text */
   line-height: 1.1rem;
@@ -102,7 +110,8 @@
   .card2,
   .card3,
   .card4,
-  .card5 {
+  .card5,
+  .card6 {
     flex: 1 1 calc(50% - 16px);
     max-width: none;
     min-height: 260px;
@@ -120,7 +129,8 @@
   .card2,
   .card3,
   .card4,
-  .card5 {
+  .card5,
+  .card6 {
     flex: 1 1 100%;
     min-height: auto;
     padding: 20px 14px;
@@ -136,7 +146,8 @@
   .card2 h5,
   .card3 h5,
   .card4 h5,
-  .card5 h5 {
+  .card5 h5,
+  .card6 h5 {
     font-size: 0.95rem;
   }
 
@@ -144,7 +155,8 @@
   .card2 p,
   .card3 p,
   .card4 p,
-  .card5 p {
+  .card5 p,
+  .card6 p {
     font-size: 0.9rem;
     line-height: 1.4;
   }

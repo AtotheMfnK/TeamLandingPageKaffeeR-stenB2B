@@ -22,7 +22,6 @@
   padding-bottom: 1rem;
   width: min(95%, 55rem);
   line-height: min(2.5rem, 6vw);
-
 }
 
 
@@ -42,6 +41,7 @@ h1 {
   line-height: min(0.5rem, 1vw);
   padding: min(0.5rem, 2vw);
   margin: 0;
+ 
 }
 
 .hero-description {
@@ -49,11 +49,11 @@ h1 {
   width: min(95%, 55rem);
   line-height: clamp(1rem, 1.5rem, 2rem);
   opacity: 0.8;
-
 }
 
 .hero-description p {
   font-size: clamp(1rem, 1.3rem, 3rem);
+     font-family: ’DeineZweiteSchriftart’;
 }
 
 .linkAnfragen {
@@ -86,7 +86,7 @@ a:hover {
 
 .image-section {
   position: relative;
-  background-image: url(../images/heritestimage.jpg);
+  background-image: url(../images/pseudoherotestimage.jpg);
   background-size: cover;
   /* Bild passt vollständig in den Container */
   background-repeat: no-repeat;
@@ -110,7 +110,7 @@ a:hover {
   /* Zentriert den Inhalt horizontal */
   width: clamp(80px, 15vw, 250px);
   height: clamp(80px, 15vw, 250px);
-  background-color: green;
+  background-color: var(--color-primary);
   border-radius: 180px;
   text-align: center;
   /* Zentriert den Text innerhalb der <p>-Elemente */
@@ -125,6 +125,7 @@ a:hover {
   /* Unten ausrichten */
   right: min(20vw, 5.5rem);
   /* Rechts ausrichten */
+  
 }
 
 

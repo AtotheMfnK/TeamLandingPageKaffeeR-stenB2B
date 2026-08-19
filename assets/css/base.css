@@ -4,6 +4,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'DeineZweiteSchriftart';
+  src: url(https://static.canva.com/web/images/cff149ee1e9d2be50ac77bcd86769d05.woff2) format('woff2');
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
