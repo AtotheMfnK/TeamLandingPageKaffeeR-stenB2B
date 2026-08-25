@@ -7,10 +7,13 @@
   /* Abstand zwischen den Karten */
   padding: 20px;
   /* Optional: Padding um die Karten herum */
+   background-color: var(--color-background);
+   margin: 12rem 8rem;
 }
 
 .cardSection p {
   font-family: ’DeineZweiteSchriftart’;
+ 
 }
 
 .card1,
@@ -35,8 +38,8 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 85px;
-  height: 85px;
+  width: 185px;
+  height: 125px;
   background-color: brown;
   border-radius: 50%; /* Perfekter Kreis */
   color: white;
@@ -46,12 +49,12 @@
 }
 
 /* Manuelle Nummerierung für jedes Element */
-.round-card:nth-of-type(1)::before { content: "1"; }
+/* .round-card:nth-of-type(1)::before { content: "1"; }
 .round-card:nth-of-type(2)::before { content: "2"; }
 .round-card:nth-of-type(3)::before { content: "3"; }
 .round-card:nth-of-type(4)::before { content: "4"; }
 .round-card:nth-of-type(5)::before { content: "5"; }
-.round-card:nth-of-type(6)::before { content: "6"; }
+.round-card:nth-of-type(6)::before { content: "6"; } */
 
 /* Gemeinsame Stile für die Pseudo-Elemente */
 .round-card::before {
@@ -71,7 +74,7 @@
 
 .round-card img {
   width: 100%;
-  border-radius: 45%;
+  border-radius: 545%;
   margin: 0 auto;
 }
 

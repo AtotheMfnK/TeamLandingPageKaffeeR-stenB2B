@@ -1,26 +1,29 @@
 .pricing-info-section {
   padding: 24px 0;
+  margin: 0;
 }
 
 .pricing-info-card {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr 1fr;
+  display: flex;
+  /* grid-template-columns: 1fr 1.5fr 1fr; */
   align-items: center;
-  gap: 34px;
+  gap: 14px;
   padding: 26px 32px;
   background: linear-gradient(90deg, #f7f2eb 0%, #f3ede4 100%);
   border-top: 1px solid #35523f;
+  flex-direction: column;
 }
 
 /* Preis-Kreis */
 .pricing-badge {
   display: flex;
   justify-content: center;
+  padding-bottom: 2rem;
 }
 
 .pricing-badge-inner {
-  width: 145px;
-  height: 145px;
+  width: 165px;
+  height: 165px;
   border-radius: 50%;
   background: #2f4738;
   color: #ffffff;
@@ -40,7 +43,7 @@
 }
 
 .per-person {
-  font-size: 1.05rem;
+  font-size: 0.5rem;
   font-weight: 700;
   letter-spacing: 0.03em;
 }
@@ -62,15 +65,15 @@
 /* Mitte */
 .pricing-features h2 {
   margin: 0 0 22px;
-  font-size: 2rem;
+  font-size: 1.2rem;
   line-height: 1.1;
   font-weight: 700;
   color: #161616;
 }
 
 .pricing-feature-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 10px;
 }
 
@@ -110,7 +113,7 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .pricing-cta {

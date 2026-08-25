@@ -56,6 +56,8 @@
   line-height: 1.3;
   font-weight: 700;
   color: #ffffff;
+  font-family: ’DeineZweiteSchriftart’;
+  font-weight: 500;
 }
 
 .feature-text p {
@@ -87,13 +89,16 @@
   border-bottom-left-radius: 40px;
   position: relative;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .team-event-right h2 {
   margin: 0 0 28px;
-  font-size: 2rem;
+  font-size: 1.2rem;
   line-height: 1.2;
-  font-weight: 700;
+  font-weight: 600;
   color: #3d5848;
 }
 

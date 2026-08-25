@@ -116,7 +116,7 @@ a:hover {
   /* Zentriert den Text innerhalb der <p>-Elemente */
   color: white;
   /* Optional: Textfarbe für bessere Lesbarkeit */
-  font-size: clamp(0.7rem, 1vw, 1.2rem);
+  font-size: clamp(0.7rem, 1.2vw, 1.2rem);
   box-sizing: border-box;
   /* Damits Padding nicht die Größe beeinflusst */
   position: absolute;
@@ -125,7 +125,7 @@ a:hover {
   /* Unten ausrichten */
   right: min(20vw, 5.5rem);
   /* Rechts ausrichten */
-  
+  font-weight: 800;
 }
 
 
