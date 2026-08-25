@@ -53,7 +53,7 @@ h1 {
 
 .hero-description p {
   font-size: clamp(1rem, 1.3rem, 3rem);
-     font-family: ’DeineZweiteSchriftart’;
+  
 }
 
 .linkAnfragen {

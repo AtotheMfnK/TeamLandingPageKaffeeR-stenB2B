@@ -13,7 +13,7 @@
 
 /* Linke Spalte */
 .team-event-left {
-  background: #2f4738;
+  background-color: var(--color-primary);
   color: #f5efe5;
   padding: 40px 38px;
   border-top-right-radius: 80px;
@@ -28,18 +28,21 @@
   line-height: 1.2;
   font-weight: 700;
   letter-spacing: 0.02em;
+   background-color: var(--color-primary);
 }
 
 .feature-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  background-color: var(--color-primary);
 }
 
 .feature-item {
   display: flex;
   align-items: flex-start;
   gap: 14px;
+   background-color: var(--color-primary);
 }
 
 .feature-icon {
@@ -48,6 +51,7 @@
   line-height: 1;
   color: #d8b17a;
   margin-top: 2px;
+   background-color: var(--color-primary);
 }
 
 .feature-text h3 {
@@ -58,6 +62,7 @@
   color: #ffffff;
   font-family: ’DeineZweiteSchriftart’;
   font-weight: 500;
+   background-color: var(--color-primary);
 }
 
 .feature-text p {
@@ -65,6 +70,7 @@
   font-size: 0.95rem;
   line-height: 1.55;
   color: #e4ddd3;
+   background-color: var(--color-primary);
 }
 
 /* Bildbereich */

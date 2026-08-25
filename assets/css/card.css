@@ -20,11 +20,10 @@
 .card2,
 .card3,
 .card4,
-.card5,
-.card6 {
+.card5 {
   display: block;
   flex-direction: column;
-  width: min(12%, 22%);
+  width: min(18%, 28%);
   height: 300px;
   background-color: var(--color-background);
   border-radius: 10px;
@@ -82,8 +81,7 @@
 .card2 h5,
 .card3 h5,
 .card4 h5,
-.card5 h5,
-.card6 h6 {
+.card5 h5 {
   font-size: 0.9rem;
   margin-bottom: 10px;
   line-height: normal;
@@ -94,15 +92,22 @@
 .card2 p,
 .card3 p,
 .card4 p,
-.card5 p,
-.card6 p {
-  font-size: clamp(0.4rem, 0.7rem, 0.8rem);
+.card5 p {
+  font-size: clamp(0.6rem, 1.4rem, 0.8rem);
   text-align: center;
   /* Zentrierter Text */
-  line-height: 0.8rem;
+  line-height: 1.2rem;
   color: var(--color-accent-terra);
+  font-weight: 600;
 }
 
+.card1 p:first-of-type,
+.card2 p:first-of-type,
+.card3 p:first-of-type,
+.card4 p:first-of-type,
+.card5 p:first-of-type {
+  padding-top: 22px;
+}
 @media (max-width: 991px) {
   .cardSection {
     gap: 16px;
@@ -113,8 +118,7 @@
   .card2,
   .card3,
   .card4,
-  .card5,
-  .card6 {
+  .card5 {
     flex: 1 1 calc(50% - 16px);
     max-width: none;
     min-height: 260px;
@@ -132,8 +136,7 @@
   .card2,
   .card3,
   .card4,
-  .card5,
-  .card6 {
+  .card5 {
     flex: 1 1 100%;
     min-height: auto;
     padding: 20px 14px;
@@ -149,8 +152,7 @@
   .card2 h5,
   .card3 h5,
   .card4 h5,
-  .card5 h5,
-  .card6 h5 {
+  .card5 h5 {
     font-size: 0.95rem;
   }
 
@@ -158,8 +160,7 @@
   .card2 p,
   .card3 p,
   .card4 p,
-  .card5 p,
-  .card6 p {
+  .card5 p {
     font-size: 0.9rem;
     line-height: 1.4;
   }
