@@ -33,6 +33,7 @@
   justify-content: center;
   text-align: center;
   padding: 18px;
+  background-color: var(--color-primary);
 }
 
 .price {
@@ -40,19 +41,23 @@
   font-weight: 700;
   line-height: 1;
   margin-bottom: 6px;
+  background-color: var(--color-primary);
 }
 
 .per-person {
   font-size: 0.5rem;
   font-weight: 700;
   letter-spacing: 0.03em;
+   background-color: var(--color-primary);
 }
+
 
 .divider {
   width: 42px;
   height: 1px;
   background: rgba(255, 255, 255, 0.7);
   margin: 12px 0 10px;
+   background-color: var(--color-primary);
 }
 
 .duration {
@@ -60,6 +65,7 @@
   font-weight: 700;
   line-height: 1.35;
   letter-spacing: 0.03em;
+   background-color: var(--color-primary);
 }
 
 /* Mitte */
@@ -114,6 +120,8 @@
   flex-direction: column;
   gap: 18px;
   align-items: center;
+  padding-top: 4vw;
+  background-color: var(--color-primary);
 }
 
 .pricing-cta {
@@ -130,6 +138,10 @@
   font-weight: 700;
   font-size: 1.15rem;
   letter-spacing: 0.02em;
+}
+
+.pricing-cta a {
+  background-color: var(--color-primary);  
 }
 
 .pricing-cta-arrow {
