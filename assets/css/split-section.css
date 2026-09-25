@@ -38,7 +38,7 @@
    MAIN IMAGE
 ========================================= */
 
-.card-main-image {
+.card-main-image-l {
     position: absolute;
 
     inset: 0;
@@ -47,23 +47,53 @@
     height: 100%;
 
     overflow: hidden;
+    transition: transform 1.2s ease, filter 1.2s ease;
 }
 
-.card-main-image img {
+.card-main-image-l img {
     width: 100%;
     height: 100%;
 
     object-fit: cover;
 
     display: block;
-
-    transition:
-        transform 0.8s cubic-bezier(.22,.61,.36,1),
-        filter 0.6s ease;
-
-opacity: 0.5;
+    transform: translateY(-19%)
+  
 }
 
+.card-main-image-r {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    transition: transform 1.2s ease, filter 1.2s ease;
+}
+
+.gallery-card:hover .card-main-image-l img {
+    transform: scale(1.08);
+    filter: brightness(0.3);
+}
+
+
+.card-main-image-r img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+    transform: translateY(-40%)
+  
+}
+
+.gallery-card:hover .card-main-image-r img {
+    transform: scale(1.08);
+    filter: brightness(0.3);
+}
 
 /* =========================================
    HEADER
@@ -158,7 +188,7 @@ opacity: 0.5;
 
     background: rgba(0, 0, 0, 0.38);
 
-    transition: background 0.4s ease;
+    transition: background 1.4s ease;
 }
 
 .grid-image img {
@@ -172,7 +202,7 @@ opacity: 0.5;
     transform: scale(1.08);
 
     transition:
-        transform 1s cubic-bezier(.22,.61,.36,1);
+        transform 1.6s cubic-bezier(.22,.61,.36,1);
 }
 
 
@@ -186,7 +216,7 @@ opacity: 0.5;
     z-index: 20;
 
     left: 50%;
-    top: 50%;
+    top: 75%;
 
     transform: translate(-50%, -50%);
 
@@ -194,7 +224,7 @@ opacity: 0.5;
 
     text-align: center;
 
-    color: white;
+    color: var(--color-primary);
 
     opacity: 0;
 
@@ -259,7 +289,7 @@ opacity: 0.5;
 }
 
 .gallery-card:hover .card-title {
-    opacity: 0;
+    opacity: 0;-ima
 
     transform: translateY(20px);
 }

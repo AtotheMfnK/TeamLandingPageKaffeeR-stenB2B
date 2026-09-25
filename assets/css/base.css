@@ -42,7 +42,8 @@ h2 {
 
 h3 {
     font-family: 'ZeitungPro-Black-_1_';
-  
+      text-shadow: 2px 2px 4px #ff007f;
+      font-size: clamp(1.5rem, 2.5vw, 3rem);
 }
 
 h4 {

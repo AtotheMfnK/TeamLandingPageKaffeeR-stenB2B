@@ -1,20 +1,3 @@
-.pricing-info-section {
-  padding: 24px 0;
-  margin: 0;
-}
-
-.pricing-info-card {
-  display: flex;
-  /* grid-template-columns: 1fr 1.5fr 1fr; */
-  align-items: center;
-  gap: 14px;
-  padding: 26px 32px;
-  background: linear-gradient(90deg, #f7f2eb 0%, #f3ede4 100%);
-  border-top: 1px solid #35523f;
-  flex-direction: column;
-}
-
-/* Preis-Kreis */
 .pricing-badge {
   display: flex;
   justify-content: center;
@@ -22,10 +5,9 @@
 }
 
 .pricing-badge-inner {
-  width: 165px;
+  width: 265px;
   height: 165px;
-  border-radius: 50%;
-  background: #2f4738;
+  border-radius: 15%;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -34,10 +16,11 @@
   text-align: center;
   padding: 18px;
   background-color: var(--color-primary);
+  margin: 0 auto;
 }
 
 .price {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 6px;
@@ -48,7 +31,7 @@
   font-size: 0.5rem;
   font-weight: 700;
   letter-spacing: 0.03em;
-   background-color: var(--color-primary);
+  background-color: var(--color-primary);
 }
 
 
@@ -57,15 +40,15 @@
   height: 1px;
   background: rgba(255, 255, 255, 0.7);
   margin: 12px 0 10px;
-   background-color: var(--color-primary);
+  background-color: var(--color-primary);
 }
 
 .duration {
-  font-size: 0.95rem;
+  font-size: 1.35rem;
   font-weight: 700;
   line-height: 1.35;
   letter-spacing: 0.03em;
-   background-color: var(--color-primary);
+  background-color: var(--color-primary);
 }
 
 /* Mitte */
@@ -74,7 +57,9 @@
   font-size: 1.2rem;
   line-height: 1.1;
   font-weight: 700;
-  color: #161616;
+  color: var(--color-accent-dark);
+  padding-top: 2rem;
+
 }
 
 .pricing-feature-grid {
@@ -119,9 +104,11 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 4vw;
-  background-color: var(--color-primary);
+ 
+  border-radius: 15px;
+  padding-bottom: 3rem;
 }
 
 .pricing-cta {
@@ -141,7 +128,7 @@
 }
 
 .pricing-cta a {
-  background-color: var(--color-primary);  
+  background-color: var(--color-primary);
 }
 
 .pricing-cta-arrow {
@@ -160,15 +147,22 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  min-width: 40%;
+}
+
+.pricing-contact-list a {
+  background-color: var(--color-background);
 }
 
 .contact-item {
-  display: inline-flex;
+  /* display: inline-flex; */
   align-items: center;
   gap: 12px;
   text-decoration: none;
-  color: #1f1f1f;
   font-size: 1rem;
+  text-shadow: 2px 2px 4px #ff007f;
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+   color: #2f4738;
 }
 
 .contact-icon {

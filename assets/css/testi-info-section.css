@@ -1,0 +1,28 @@
+.testi-info-section {
+  display: flex;
+  padding: 24px 0;
+  margin: 0 auto;
+  flex-direction: row;
+  width: 90vw;
+  flex: 100px auto;
+  justify-content: space-between;
+  gap: 32px;
+  border-top: 1px solid #35523f;
+}
+
+.testimonial-card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  padding-top: 2rem;
+}
+
+.testimonial-author {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #35523f;
+  margin-top: 8px;
+}
